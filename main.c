@@ -5,7 +5,7 @@ int add(int a, int b) {
 }
 
 int main() {
-    printf("Hello, OSS CI!\n");
+    printf("Hello, OSS CI! Version 2\n");
     printf("2 + 3 = %d\n", add(2, 3));
 
     return 0;
