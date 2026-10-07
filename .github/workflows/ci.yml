@@ -1,0 +1,19 @@
+name: CI for C project
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Build project
+        run: gcc main.c test.c -o test_app
+
+      - name: Run unit tests
+        run: ./test_app
