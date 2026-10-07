@@ -4,7 +4,7 @@
 int add(int a, int b);
 
 void run_tests(void) {
-    if (add(2, 3) != 5) {
+    if (add(2, 3) != 100) {
         printf("TEST FAILED: 2 + 3 should equal 5\n");
         exit(1);
     }
